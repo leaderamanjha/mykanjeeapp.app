@@ -67,7 +67,7 @@ class SignUpOneScreen extends StatelessWidget {
       SizedBox(height: 6.v),
       CustomTextFormField(
           controller: nameController,
-          hintText: "Siddartha",
+          hintText: "Enter your name",
           prefix: Container(
               margin: EdgeInsets.fromLTRB(14.h, 10.v, 8.h, 10.v),
               child: CustomImageView(
@@ -87,7 +87,7 @@ class SignUpOneScreen extends StatelessWidget {
       SizedBox(height: 5.v),
       CustomTextFormField(
           controller: phoneNumberController,
-          hintText: "91 98945 65589",
+          hintText: "Enter Your Mobile Number",
           textInputAction: TextInputAction.done,
           prefix: Container(
               margin: EdgeInsets.fromLTRB(14.h, 10.v, 8.h, 10.v),
@@ -186,6 +186,6 @@ class SignUpOneScreen extends StatelessWidget {
 
   /// Navigates to the loginoneScreen when the action is triggered.
   onTapFrameFourteen(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.loginoneScreen);
+    Navigator.pushNamed(context, AppRoutes.logintwoScreen);
   }
 }
