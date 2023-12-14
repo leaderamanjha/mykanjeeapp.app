@@ -91,7 +91,7 @@ class LogintwoScreen extends StatelessWidget {
       SizedBox(height: 5.v),
       CustomTextFormField(
           controller: phoneNumberController,
-          hintText: "siddarthaj23@gmail.com",
+          hintText: "email@domain.com",
           textInputType: TextInputType.emailAddress,
           prefix: Container(
               margin: EdgeInsets.fromLTRB(14.h, 10.v, 8.h, 10.v),
@@ -111,7 +111,7 @@ class LogintwoScreen extends StatelessWidget {
       SizedBox(height: 6.v),
       CustomTextFormField(
           controller: passwordController,
-          hintText: "Opksdgb245W",
+          hintText: "Password1234@",
           textInputAction: TextInputAction.done,
           textInputType: TextInputType.visiblePassword,
           prefix: Container(
@@ -134,7 +134,11 @@ class LogintwoScreen extends StatelessWidget {
 
   /// Section Widget
   Widget _buildSubmit(BuildContext context) {
-    return CustomElevatedButton(text: "Submit");
+    return CustomElevatedButton(
+        text: "Submit",
+        onPressed: () {
+          onTapSubmit(context);
+        });
   }
 
   /// Section Widget
@@ -217,5 +221,9 @@ class LogintwoScreen extends StatelessWidget {
   /// Navigates to the signUpOneScreen when the action is triggered.
   onTapTxtSignUp(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.signUpOneScreen);
+  }
+
+  onTapSubmit(BuildContext context) {
+    Navigator.pushNamed(context, AppRoutes.logintwoScreen);
   }
 }

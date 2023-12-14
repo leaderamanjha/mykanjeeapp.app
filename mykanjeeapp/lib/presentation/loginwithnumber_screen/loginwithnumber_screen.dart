@@ -71,7 +71,7 @@ class LoginwithnumberScreen extends StatelessWidget {
       SizedBox(height: 5.v),
       CustomTextFormField(
           controller: phoneNumberController,
-          hintText: "91 98986 98645",
+          hintText: "Enter your mobile number",
           textInputAction: TextInputAction.done,
           prefix: Container(
               margin: EdgeInsets.fromLTRB(14.h, 10.v, 8.h, 10.v),

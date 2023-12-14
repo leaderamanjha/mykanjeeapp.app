@@ -59,7 +59,7 @@ class SignUpTwoScreen extends StatelessWidget {
       SizedBox(height: 6.v),
       CustomTextFormField(
           controller: passwordController,
-          hintText: "Opksdgb245W",
+          hintText: "Password123@",
           prefix: Container(
               margin: EdgeInsets.fromLTRB(14.h, 10.v, 8.h, 10.v),
               child: CustomImageView(
@@ -84,7 +84,7 @@ class SignUpTwoScreen extends StatelessWidget {
       SizedBox(height: 6.v),
       CustomTextFormField(
           controller: confirmpasswordController,
-          hintText: "Opksdgb245W",
+          hintText: "Password123@",
           textInputAction: TextInputAction.done,
           textInputType: TextInputType.visiblePassword,
           prefix: Container(
@@ -263,6 +263,6 @@ class SignUpTwoScreen extends StatelessWidget {
 
   /// Navigates to the loginoneScreen when the action is triggered.
   onTapLoginRow(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.loginoneScreen);
+    Navigator.pushNamed(context, AppRoutes.logintwoScreen);
   }
 }
